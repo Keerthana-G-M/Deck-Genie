@@ -40,12 +40,13 @@ DeckGenie is an AI-powered presentation generator built to simplify and accelera
    ```bash
    pip install -r requirements.txt
 
-3. Add your API keys in .env file
+3. Add your API keys in .env file:
+   ```bash
    ANTHROPIC_API_KEY="your anthropic api key"
    UNSPLASH_API_KEY="your unsplash api key"
    GEMINI_API_KEY="your gemini api key"
 
-4. Run the app:
+5. Run the app:
    ```bash
    streamlit run main.py
 
