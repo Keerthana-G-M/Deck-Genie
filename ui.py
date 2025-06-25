@@ -7,7 +7,16 @@ from ppt_generator import create_presentation
 from utils import sanitize_filename
 from preview_generator import SlidePreviewGenerator, simulate_slide_generation_with_preview
 from slide_editor import SlideEditor
-from pdf_converter import convert_to_pdf
+#from pdf_converter import convert_to_pdf
+
+import platform
+
+if platform.system() == "Windows":
+    from pdf_converter import convert_to_pdf
+else:
+    def convert_to_pdf(*args, **kwargs):
+        st.warning("PDF conversion not supported in web version.")
+
 
 def load_demo_data():
     """Load demo data for presentation fields."""

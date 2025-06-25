@@ -3,6 +3,15 @@ import comtypes.client
 import tempfile
 import streamlit as st
 import pythoncom
+import platform
+
+if platform.system() == "Windows":
+    import comtypes.client
+    
+else:
+    def convert_to_pdf(*args, **kwargs):
+        raise NotImplementedError("PDF conversion is only supported on Windows.")
+
 
 def convert_to_pdf(input_pptx_path):
     try:
