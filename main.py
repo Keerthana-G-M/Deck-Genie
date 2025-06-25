@@ -2,6 +2,12 @@ import streamlit as st
 from ui import render_ui
 import os
 import shutil
+import platform
+
+if platform.system() == "Windows":
+    import comtypes
+    import win32com.client
+
 
 def main():
     st.set_page_config(
