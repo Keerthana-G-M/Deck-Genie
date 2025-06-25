@@ -50,6 +50,16 @@ DeckGenie is an AI-powered presentation generator built to simplify and accelera
    ```bash
    streamlit run main.py
 
+## ⚠ PDF Conversion Notice
+
+The PDF generation feature (via pdf_converter.py) relies on comtypes and pywin32, which are *Windows-only* dependencies.  
+As a result:
+
+- ✅ PDF conversion works *locally on Windows systems*
+- 🚫 PDF conversion is *disabled on Streamlit Cloud* and other non-Windows environments
+
+If you're running the app locally on Windows, you can take full advantage of the .pptx to .pdf conversion feature.
+
 ## 📬 Contributions & Feedback
 
 We welcome feedback, feature requests, and contributions!
