@@ -60,7 +60,7 @@ If you'd like to:
 - 🧪 Improve performance or design
 - 📖 Enhance documentation
 
-Feel free to *fork the repo, make your changes, and open a **pull request*.  
+Feel free to *fork the repo*, make your changes, and open a *pull request*.  
 You can also open an *issue* to report bugs or suggest ideas.
 
 Let’s build DeckGenie together! 💡
